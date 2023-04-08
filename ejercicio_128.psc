@@ -1,5 +1,5 @@
 Proceso ejercicio_128
-	Definir pesos,francos,bolivares,dolares,sucres,opcion Como Real;
+	Definir cambio,bolivares,opcion Como Real;
 	Escribir "Escribir la cantidad de dinero en bolívares."; 
 	Leer bolivares;
 	Escribir "1. Cambiar de bolívares a francos.";
@@ -9,17 +9,17 @@ Proceso ejercicio_128
 	Leer opcion;
 	Segun opcion Hacer
 		1:
-			francos<-bolivares*0.000046;
-			Escribir "El valor en francos es: $",francos;
+			cambio<-bolivares*0.000046;
+			Escribir "El valor en francos es: $",cambio;
 		2:
-			dolares<-bolivares*0.00000040930121;
-			Escribir "El valor en dólares es: $",dolares;
+			cambio<-bolivares*0.00000040930121;
+			Escribir "El valor en dólares es: $",cambio;
 		3:
-			pesos<-bolivares*0.0018699656 ;
-			Escribir "El valor en pesos es: $",pesos;
+			cambio<-bolivares*0.0018699656 ;
+			Escribir "El valor en pesos es: $",cambio;
 		4:
-			sucres<-bolivares*0.1006;
-			Escribir "El valor en sucres es: $",sucres;
+			cambio<-bolivares*0.1006;
+			Escribir "El valor en sucres es: $",cambio;
 		De Otro Modo:
 			Escribir "Cambio no valido.";
 	FinSegun

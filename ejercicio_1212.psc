@@ -12,5 +12,7 @@ Proceso ejercicio_1212
 		2:
 			fareheint<-(9/5*celcius)+32;
 			Escribir "El valor en grados Fahrenheit es: ",fareheint;
+		De Otro Modo:
+			Escribir "Converción no valida.";
 	FinSegun
 FinProceso

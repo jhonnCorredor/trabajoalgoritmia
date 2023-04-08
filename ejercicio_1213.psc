@@ -12,6 +12,8 @@ Proceso ejercicio_1213
 		2:
 			fareheint<-(kelvin*9/5)-459.67;
 			Escribir "El valor en grados Fahrenheit es: ",fareheint;
+		De Otro Modo:
+			Escribir "Converción no valida.";
 	FinSegun
 	
 FinProceso

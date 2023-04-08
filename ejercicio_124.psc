@@ -1,32 +1,35 @@
 Proceso ejercicio_124
 	Definir letra Como Caracter;
 	Definir valo_r Como Real;
-	Escribir "Ingrese una letra que sea un número romano.";
+	valo_r <- 0;
+	Escribir 'Ingrese una letra que sea un número romano.';
 	Leer letra;
-	si letra="I" Entonces
-		valo_r<-1;
+	Si letra='I' Entonces
+		valo_r <- 1;
 	SiNo
-		si letra="V" Entonces
-			valo_r<-5;
+		Si letra='V' Entonces
+			valo_r <- 5;
 		SiNo
-			si letra="X" Entonces
-				valo_r<-10;
+			Si letra='X' Entonces
+				valo_r <- 10;
 			SiNo
-				si letra="L" Entonces
-					valo_r<-50;
+				Si letra='L' Entonces
+					valo_r <- 50;
 				SiNo
-					si letra="C" Entonces
-						valo_r<-100;
+					Si letra='C' Entonces
+						valo_r <- 100;
 					SiNo
-						si letra="D" O letra="M" Entonces
-							valo_r<-500;
-						SiNo
-							Escribir "No es un número roma.";
+						Si letra='D' O letra='M' Entonces
+							valo_r <- 500;
 						FinSi
 					FinSi
 				FinSi
 			FinSi
 		FinSi
 	FinSi
-	Escribir "El valor del número romano es: ",valo_r;
+	Si valo_r=0 Entonces
+		Escribir 'No es un número romano.';
+	SiNo
+		Escribir 'El valor del número romano es: ',valo_r;
+	FinSi
 FinProceso

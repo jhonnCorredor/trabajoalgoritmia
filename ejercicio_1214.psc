@@ -12,6 +12,8 @@ Proceso ejercicio_1214
 		2:
 			celcius<-(fareheint-32)/1.8;
 			Escribir "El valor en grados Celsius es: ",celcius;
+		De Otro Modo:
+			Escribir "Converción no valida.";
 	FinSegun
 	
 FinProceso
